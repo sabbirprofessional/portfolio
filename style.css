@@ -151,6 +151,18 @@ header {
         transform: translateY(0);
     }
 }
+/* style.css - existing media query এর মধ্যে এই স্টাইল যোগ করুন */
+@media (max-width: 768px) {
+    .navlist a {
+        font-size: 1.2rem !important;
+        padding: 15px 0 !important;
+    }
+    
+    .navlist.active {
+        right: 0 !important;
+        width: 70% !important;
+    }
+}
 
 
 /* ===== Home/Hero Section ===== */
