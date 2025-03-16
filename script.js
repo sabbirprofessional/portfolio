@@ -16,7 +16,12 @@ function toggleMenu() {
     menuIcon.classList.toggle('bx-x');
     document.body.classList.toggle('no-scroll');
 }
-
+// script.js - existing mobile menu code এর নিচে এই কোড যোগ করুন
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        closeMenu();
+    }
+});
 // Close Menu Function
 function closeMenu() {
     navList.classList.remove('active');
